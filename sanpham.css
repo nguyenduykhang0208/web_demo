@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial,Helvetica, sans-serif;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 50px;
+	height: 70px;
+	align-items: center;
+}
+.logo{
+	padding-top: 15px;
+	flex: 1;
+}
+.logo img{
+	height: 100px;
+}
+
+.menu{
+	flex: 3;
+	display: flex;
+}
+.menu li{
+	padding: 0 18px;
+}
+.menu li a{
+	font-weight: bold;
+
+}
+.menu li a:hover{
+	color: red;
+}
+.menu li a.active{
+	color: red;
+}
+.others{
+	flex: 1;
+	display: flex;
+}
+.others li{
+	padding: 0 12px;
+}
+.others li:first-child{
+	position: relative;
+}
+.others li:first-child input{
+	width: 100%;
+	border: none;
+	border-bottom:1px solid #333333 ;
+
+}
+.others li:first-child i{
+	position: absolute;
+	right: 10px;
+	
+}
+.container{
+	padding-top: 30px;
+	margin: 0 auto;
+	width: 80%;
+}
+
+ .app-container{
+ 	text-align: center;
+ 	align-items: center;
+ 	padding: 150px 0 50px 0;
+ }
+
+ .app-container img{
+ 	width: 200px;
+ 	height: 50px;
+ }
+ .app_google{
+ 	margin: 50px;
+ }
+.app-container p{
+	line-height: 20px;
+	letter-spacing: 1px;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 30px;
+}
+.app-container input{
+	margin-top: 50px;
+	border: none;
+	border-bottom: 1px solid #000;
+	padding-bottom: 20px;
+	width: 400px;
+	text-align: center;
+	outline: none;
+}
+.input-email {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px ;
+}
+.input-email input {
+    width: 100%;
+    border: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.input-email i {
+    position: absolute;
+    right: 12px;
+    bottom: 6px;
+    cursor: pointer;
+}
+/*footer*/
+footer{
+	text-align: center;
+}
+.footer-top{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	height: 70px;
+}
+.footer-top img{
+	height: 50px;
+}
+.footer-top li{
+	padding: 0 12px;
+	position: relative;
+}
+.footer-top li::after{
+	content:"";
+	display: block;
+	width: 1px;
+	height: 80%;
+	background: #cccccc;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.footer-top li:last-child::after{
+	 display: none;	
+}
+.footer-top li:last-child a{
+	margin-right: 12px;
+	color: #333;
+}
+.footer-bottom{
+	margin: 20px 0;
+}
